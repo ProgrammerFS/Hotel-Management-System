@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Hotel Management System{% endblock %}
+{% block content %}
+<h1 style="padding-bottom: 10px;">Check-out a customer</h1>
+<form method="POST" style="align-items: center; justify-content: center; ;">
+    <div class="form-group">
+        <label for="Name">Enter the Name of the customer</label>
+        <input type="text" class="form-control" id="Name" name="Name" placeholder="Enter Customers Name"/>
+    </div>
+    <div class="form-group">
+        <label for="roomnumber">Enter the Room number of the customer</label>
+        <input type="number" class="form-control" id="roomnumber" name="roomnumber" placeholder="Enter room no." />
+    </div>
+    <button type="submit" class="btn btn-primary" style="margin-top: 10px;margin-bottom: 10px;">Submit</button>
+</form>
+<a href="/logged-in">Or Check-In a customer</a>
+{% endblock %}
